@@ -234,10 +234,10 @@ a:hover {
     animation: fadeIn linear 2s;
 }
 
-@media  (max-width: 300px) {
+@media  (max-width: 500px) {
     body {
         width: 200%;
-        background-color: #ff0611;
+        background-color: black;
         font-size: 1.125rem;
         display: inline-block;
         color: #fff;
@@ -390,8 +390,10 @@ input {
 
 .githubbtn {
     background-color: white;
+    color: black;
 }
 
 .emailbtn {
     background-color: rgb(223, 180, 180);
+    color: black;
 }
