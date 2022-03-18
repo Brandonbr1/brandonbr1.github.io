@@ -281,6 +281,7 @@ input {
 }
 .dsgetbtn{
     background-color: purple;
+    width: 80%;
 }
 
 .dsgetbtn:hover{
@@ -382,18 +383,31 @@ input {
 
 .twitbtn {
     background-color: #2196F3;
+    width: 80%;
 }
 
 .redditbtn {
     background-color: #a11919;
+    width: 80%;
 }
 
 .githubbtn {
     background-color: white;
     color: black;
+    width: 80%;
 }
 
 .emailbtn {
     background-color: rgb(223, 180, 180);
     color: black;
+    width: 80%;
 }
+
+.light-mode {
+    background-color: rgb(146, 146, 241);
+    color: black;
+  }
+
+  a {
+      color: darkorchid;
+  }

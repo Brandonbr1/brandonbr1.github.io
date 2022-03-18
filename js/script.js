@@ -63,3 +63,8 @@ function setCookie(cname,cvalue,exdays) {
     }
     return "";
   };
+
+  function ToggleBtn() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+ }
