@@ -131,6 +131,56 @@ a:hover {
     }
     
 }
+@media (max-width: 600px) {
+    .toplangs {
+        width: 800px;
+    }
+}
+
+@media (max-width: 600px) {
+    .github-stats {
+        width: 800px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .li {
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+}
+
+@media (max-width: 600px) {
+    .forofour {
+        font-size: 40px;
+        width: 80%;
+    }
+}
+
+/* fix this soon */
+/* @media (max-width: 600px) {
+    body {
+        right: 50;
+    }
+}
+*/
+
+
+@media (max-width: 600px) {
+    .abt-me {
+        width: 190%;
+        height: 6000%;
+    }
+}
+
+@media (max-width: 600px) {
+    .programs-skills-img {
+        width: 800px;
+    }
+}
+
 .creditsimg {
     font-size: 0.563rem;
 }
@@ -328,4 +378,20 @@ input {
     background-color: white;
     right: 0;
     width: 50%;
+}
+
+.twitbtn {
+    background-color: #2196F3;
+}
+
+.redditbtn {
+    background-color: #a11919;
+}
+
+.githubbtn {
+    background-color: white;
+}
+
+.emailbtn {
+    background-color: rgb(223, 180, 180);
 }

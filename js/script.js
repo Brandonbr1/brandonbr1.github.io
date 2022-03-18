@@ -21,6 +21,13 @@ window.location.href='https://twitter.com/BrandonM666_';
 };
 }
 
+function TwitShow() {
+  if (window.confirm('Click Ok to go to my Twitter ')) 
+  {
+  window.location.href='https://twitter.com/BrandonM666_';
+  };
+  }
+
 function GithubGet() {
 if (window.confirm('Click Ok to go to my Github ')) 
 {
