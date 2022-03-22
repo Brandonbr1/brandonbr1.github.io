@@ -401,6 +401,10 @@ input {
     color: black;
     width: 80%;
 }
+.light-mode {
+    background-color: rgb(146, 146, 241);
+    color: black;
+  }
   a {
       color: darkorchid;
   }
