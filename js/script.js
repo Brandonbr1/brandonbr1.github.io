@@ -1,4 +1,5 @@
 "use strict";
+const darkButton = document.getElementById('dark');
 function EmailRevil() {
 if (window.confirm('click ok to email me ')) 
 {
@@ -67,4 +68,5 @@ function setCookie(cname,cvalue,exdays) {
   function ToggleBtn() {
     var element = document.body;
     element.classList.toggle("light-mode");
- }
+
+}

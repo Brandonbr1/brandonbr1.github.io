@@ -233,9 +233,8 @@ a:hover {
     color: #fff;
     animation: fadeIn linear 2s;
 }
-
 @media  (max-width: 500px) {
-    body {
+    .hiexplain {
         width: 200%;
         background-color: black;
         font-size: 1.125rem;
@@ -402,12 +401,6 @@ input {
     color: black;
     width: 80%;
 }
-
-.light-mode {
-    background-color: rgb(146, 146, 241);
-    color: black;
-  }
-
   a {
       color: darkorchid;
   }
