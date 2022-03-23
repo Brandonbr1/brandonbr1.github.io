@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
     
 }
-
 html {
     margin: 0;
     padding: 0;
@@ -159,13 +158,13 @@ a:hover {
     }
 }
 
-/* fix this soon */
-/* @media (max-width: 600px) {
+
+ @media (max-width: 600px) {
     body {
         right: 50;
+        left: 50;
     }
 }
-*/
 
 
 @media (max-width: 600px) {
@@ -334,14 +333,12 @@ input {
   .dropdown:hover .dropbtn {
       background-color: #3e8e41;
 }
-
 .css {
     padding-left: 20px;
     text-align: center;
     width: 50%; 
     background-color: #2196F3;
 }
-
 .html {
     width: 80%;
     background-color: darkgreen;
@@ -367,7 +364,6 @@ input {
     width: 20% ;
     background-color: yellow;
 }
-
 .skillsbar {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -389,7 +385,6 @@ input {
     background-color: #a11919;
     width: 80%;
 }
-
 .githubbtn {
     background-color: white;
     color: black;
@@ -407,4 +402,19 @@ input {
   }
   a {
       color: darkorchid;
+  }
+  :root {
+      
+  }
+
+  table,td,tbody {
+      width: 20px;
+      height: 5px;
+      right: 50;
+      border: white;
+      padding: 20px;
+      font-size: 15px;
+      border-style: solid;
+      border-width: thin;
+      text-align: center;
   }

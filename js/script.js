@@ -1,5 +1,10 @@
 "use strict";
-const darkButton = document.getElementById('dark');
+const darkButton = document.getElementById('them-switch');
+const theme = localStorage.getItem('theme');
+var element = document.body;
+const isLight = localStorage.getItem('isSolar');
+
+
 function EmailRevil() {
 if (window.confirm('click ok to email me ')) 
 {
@@ -65,8 +70,15 @@ function setCookie(cname,cvalue,exdays) {
     return "";
   };
 
+  if (theme) {
+    element.classList.add(theme);
+    isLight && body.classList.add('light-mode');
+  }
+
   function ToggleBtn() {
     var element = document.body;
     element.classList.toggle("light-mode");
+
+    localStorage.setItem('theme', 'light-mode');
 
 }
