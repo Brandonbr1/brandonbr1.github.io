@@ -1,8 +1,9 @@
 "use strict";
+// dom get
 const darkButton = document.getElementById('them-switch');
 const theme = localStorage.getItem('theme');
 const element = document.body;
-const isLight = localStorage.getItem('isSolar');
+const isLight = localStorage.getItem('light-mode');
 
 
 function EmailRevil() {
@@ -41,6 +42,7 @@ window.location.href='https://bit.ly/Brandonbr1Git';
 };
 }
 
+// cookie
 function myFunction() {
     year = document.getElementById("theyear").innerHTML = "Years";
     let x = Math.floor((Math.random() * 10000000000000) ); // change the number to a lower number to get funny results for any ticl tok video idk?
@@ -69,6 +71,7 @@ function setCookie(cname,cvalue,exdays) {
     }
     return "";
   };
+  // light mode switcher
 
   if (theme) {
     element.classList.add(theme);
