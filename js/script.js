@@ -1,7 +1,7 @@
 "use strict";
 const darkButton = document.getElementById('them-switch');
 const theme = localStorage.getItem('theme');
-var element = document.body;
+const element = document.body;
 const isLight = localStorage.getItem('isSolar');
 
 
