@@ -1,72 +1,107 @@
+// Core assets
+let coreAssets = [
+  '/index.html',
+  '/contact.html',
+  './style/style.css',
+  './media/programming_skills.png',
+  '/art.html',
+  '/contact.html',
+  '/blog.html',
+  '/404.html',
+  '/disclamer.html',
+  '/maps.html',
+  '/mod.html',
+  '/modpacks.html',
+  '/privacypolicy.html',
+  '/orange-luck-addon.html',
+  '/minecraftprojectsection.html',
+  './mods/fastfoodmod.html'
+];
 
-// *******************************************   p-cache.js    ***********************************************
-// What it does: it caches all requests a site makes (css, js, html, etc.) and when the app is offline it loads the cached version.
-// On the Developer Tools' Network tab, if Disable cache is checked, requests will go to the network instead of the Service Worker. Uncheck that.
-// Incognito mode skips the service worker as well!
+// On install, cache core assets
+self.addEventListener('install', function (event) {
 
-var cacheName = 'pc-v2'; 
+	// Cache core assets
+	event.waitUntil(caches.open('app').then(function (cache) {
+		for (let asset of coreAssets) {
+			cache.add(new Request(asset));
+		}
+		return cache;
+	}));
 
-// Installing Service Worker
-// "https://legends.io/index.html"
-self.addEventListener('install',  function (e) {
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      console.log("CACHING /INDEX.HTML");
-      return cache.addAll(
-        [
-          '/index.html',
-          '/contact.html',
-          './style/style.css',
-          './media/programming_skills.png',
-          '/art.html',
-          '/contact.html',
-          '/blog.html',
-          '/404.html',
-          '/disclamer.html',
-          '/maps.html',
-          '/mod.html',
-          '/modpacks.html',
-          '/privacypolicy.html',
-          '/orange-luck-addon.html',
-          '/minecraftprojectsection.html',
-          './mods/fastfoodmod.html'
-        ]
-      );
-    })
-  ); 
-  console.log('[Service Worker] Install');   
 });
 
-self.addEventListener('activate', e => {
-  console.log('Service Worker: Activated');
-  // Remove unwanted caches
-  e.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cache => {
-          if (cache !== cacheName) {
-            console.log('Service Worker: Clearing Old Cache');
-            return caches.delete(cache);
-          }
-        })
-      );
-    })
-  );
-});
+// Listen for request events
+self.addEventListener('fetch', function (event) {
 
-// FETCH PROXY & CACHING
-// 1.) try get resource from cache else fetch and update cache else --> error
-self.addEventListener('fetch', function (e) {
-  console.log('network or cache: ' + e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function (r) {
-      return r || fetch(e.request).then(function (response) {
-        return caches.open(cacheName).then(function (cache) {
-          console.log('Caching new resource: ' + e.request.url);
-          cache.put(e.request, response.clone());
-          return response;
-        });
-      }).catch(function(err){console.log(err);});
-    })
-  );
+	// Get the request
+	let request = event.request;
+
+	// Bug fix
+	// https://stackoverflow.com/a/49719964
+	if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') return;
+
+	// HTML files
+	// Network-first
+	if (request.headers.get('Accept').includes('text/html')) {
+		event.respondWith(
+			fetch(request).then(function (response) {
+
+				// Create a copy of the response and save it to the cache
+				let copy = response.clone();
+				event.waitUntil(caches.open('app').then(function (cache) {
+					return cache.put(request, copy);
+				}));
+
+				// Return the response
+				return response;
+
+			}).catch(function (error) {
+
+				// If there's no item in cache, respond with a fallback
+				return caches.match(request).then(function (response) {
+					return response || caches.match('/404.html');
+				});
+
+			})
+		);
+	}
+
+	// CSS & JavaScript
+	// Offline-first
+	if (request.headers.get('Accept').includes('text/css') || request.headers.get('Accept').includes('text/javascript')) {
+		event.respondWith(
+			caches.match(request).then(function (response) {
+				return response || fetch(request).then(function (response) {
+
+					// Return the response
+					return response;
+
+				});
+			})
+		);
+		return;
+	}
+
+	// Images
+	// Offline-first
+	if (request.headers.get('Accept').includes('image')) {
+		event.respondWith(
+			caches.match(request).then(function (response) {
+				return response || fetch(request).then(function (response) {
+
+					// Save a copy of it in cache
+					let copy = response.clone();
+					event.waitUntil(caches.open('app').then(function (cache) {
+						return cache.put(request, copy);
+					}));
+
+					// Return the response
+					return response;
+
+				});
+			})
+		);
+	}
+
 });
