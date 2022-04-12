@@ -84,3 +84,8 @@ function setCookie(cname,cvalue,exdays) {
     localStorage.setItem('theme', 'light-mode');
 
 };
+// from https://css-tricks.com/add-a-service-worker-to-your-site/
+
+if (navigator && navigator.serviceWorker) {
+  navigator.serviceWorker.register('sw.js');
+}
