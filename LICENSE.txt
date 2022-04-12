@@ -430,8 +430,6 @@ Creative Commons may be contacted at creativecommons.org.
 
 
 
-Website is under the following terms: (c) Copyright Brandonbr1 2022 All rights reserved
-
 the term code refers to the files endling with the file extention: ".html",".js",".css",".xml"
 Website code is under the following terms:
 

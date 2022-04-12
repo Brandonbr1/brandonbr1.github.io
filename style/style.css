@@ -415,6 +415,10 @@ input {
     background-color: rgb(146, 146, 241);
     color: black;
   }
+  .darkbtn {
+      width: 40px;
+      background-color: rgb(176, 255, 50);
+  }
   a {
       color: darkorchid;
   }
@@ -438,9 +442,8 @@ input {
       background-color: rgb(179, 230, 122);
   }
   .bigdownloadbtn{
-     width: 600px; 
-     height: 100px;
-     background-color: chocolate;
+     width: 200px;
+     background-color: rgb(24, 163, 228);
   }
   .errtxt {
       color: red;

@@ -1,13 +1,12 @@
 "use strict";
-// dom get
 const darkButton = document.getElementById('them-switch');
 const theme = localStorage.getItem('theme');
 const element = document.body;
-const isLight = localStorage.getItem('light-mode');
+var isLight = localStorage.getItem('light-mode');
 
 
 function EmailRevil() {
-if (window.confirm('click ok to email me ')) 
+if (window.confirm('click ok to email me')) 
 {
 window.location.href='https://mailhide.io/e/ZlwLh5pW';
 };
@@ -22,9 +21,9 @@ function RedditGet() {
 }
 
 function CurseGet() {
-if (window.confirm('would you like to go to my twitter(press ok) ')) 
+if (window.confirm('would you like to go to my curse(press ok) ')) 
 {
-window.location.href='https://twitter.com/BrandonM666_';
+window.location.href='https://www.curseforge.com/members/brandonmohammed666/projects';
 };
 }
 
