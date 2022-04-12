@@ -63,11 +63,11 @@ function setCookie(cname,cvalue,exdays) {
       let c = ca[i];
       while (c.charAt(0) == ' ') {
         c = c.substring(1);
-      }
+      };
       if (c.indexOf(name) == 0) {
         return c.substring(name.length, c.length);
-      }
-    }
+      };
+    };
     return "";
   };
   // light mode switcher
@@ -83,4 +83,4 @@ function setCookie(cname,cvalue,exdays) {
 
     localStorage.setItem('theme', 'light-mode');
 
-}
+};
