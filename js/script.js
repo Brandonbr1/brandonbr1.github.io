@@ -60,8 +60,8 @@ window.location.href='https://bit.ly/Brandonbr1Git';
 
 function myFunction() {
     year = document.getElementById("theyear").innerHTML = "Years";
-    let x = Math.floor((Math.random() * 10000000000000) ); // change the number to a lower number to get funny results for any ticl tok video idk?
-    document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo").innerHTML =
+    Math.floor(Math.random() * 100) + 1;
 };
 
 
