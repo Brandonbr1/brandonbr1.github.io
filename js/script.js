@@ -17,8 +17,11 @@ function DsGet() {
 }
 
 function RedditGet() {
-  alert('No available right now')
-}
+  if (window.confirm('would you like to go to my reddit(press ok) ')) 
+  {
+  window.location.href='https://www.reddit.com/user/Thedemon_slayerlove';
+  };
+  }
 
 function CurseGet() {
 if (window.confirm('would you like to go to my curse(press ok) ')) 
@@ -41,13 +44,14 @@ window.location.href='https://bit.ly/Brandonbr1Git';
 };
 }
 
-// cookie
 function myFunction() {
     year = document.getElementById("theyear").innerHTML = "Years";
     let x = Math.floor((Math.random() * 10000000000000) ); // change the number to a lower number to get funny results for any ticl tok video idk?
     document.getElementById("demo").innerHTML = x;
 };
 
+
+// cookie
 function setCookie(cname,cvalue,exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));

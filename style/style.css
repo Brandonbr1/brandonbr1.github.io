@@ -420,7 +420,7 @@ input {
       background-color: rgb(176, 255, 50);
   }
   a {
-      color: darkorchid;
+      color: white;
   }
   :root{
     --headder-color-1: white;

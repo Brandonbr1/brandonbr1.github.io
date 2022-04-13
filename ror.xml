@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for https://brandonbr1.github.io/</title>
-  <link>https://brandonbr1.github.io/</link>
+  <title>ROR Sitemap for http://brandonbr1.github.io/</title>
+  <link>http://brandonbr1.github.io/</link>
 
 <item>
      <link>https://brandonbr1.github.io/</link>
-     <title>Home</title>
+     <title>Jerios || Homepage</title>
      <description>this is brandonbr1/brandonmohammed666 website and has modpacks addons and mods.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
@@ -14,7 +14,7 @@
 </item>
 <item>
      <link>https://brandonbr1.github.io/index.html</link>
-     <title>Home</title>
+     <title>Jerios || Homepage</title>
      <description>this is brandonbr1/brandonmohammed666 website and has modpacks addons and mods.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -22,8 +22,8 @@
 </item>
 <item>
      <link>https://brandonbr1.github.io/art.html</link>
-     <title>pixel art</title>
-     <description>pixel art</description>
+     <title>art</title>
+     <description>art</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
@@ -38,114 +38,122 @@
 </item>
 <item>
      <link>https://brandonbr1.github.io/minecraftprojectsection.html</link>
-     <title>Document</title>
-     <description>Document</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://brandonbr1.github.io/maps.html</link>
-     <title>maps</title>
-     <description>maps</description>
+     <title>Minecraft Project section</title>
+     <description>Minecraft Project section</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://brandonbr1.github.io/modpacks.html</link>
-     <title>modpack</title>
-     <description>modpack</description>
+     <title>modpacks</title>
+     <description>this is brandonbr1/brandonmohammed666 website and has modpacks addons and mods.</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://brandonbr1.github.io/mod.html</link>
-     <title>Mod</title>
-     <description>Mod</description>
+     <title>Home</title>
+     <description>this is brandonbr1/brandonmohammed666 website and has modpacks addons and mods.</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/maps.html</link>
+     <title>Maps</title>
+     <description>Maps</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/modpacks/patscitysurival.html</link>
+     <title>pats city surival modpacks</title>
+     <description>this is brandonbr1/brandonmohammed666 website and has modpacks addons and mods.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/modpacks/pats6epicprop.html</link>
+     <title>popoularmmos season 6 modpacks</title>
+     <description>popoularmmos season 6 modpacks</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/modpacks/too-mutch-exploring.html</link>
+     <title>Too mutch exploring modpacks</title>
+     <description>this is brandonbr1/brandonmohammed666 website and has modpacks addons and mods.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/modpacks/craftingdeadplusplus.html</link>
+     <title>Craftingdead++ modpacks</title>
+     <description>Craftingdead++ modpacks</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://brandonbr1.github.io/lucky-addon.html</link>
-     <title>lucky block addon</title>
-     <description>lucky block addon</description>
+     <title>Lucky addon</title>
+     <description>Lucky addon</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
+     <ror:sortOrder>3</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://brandonbr1.github.io/sitemap.html</link>
-     <title>brandonbr1.github.io Site Map - Generated by www.xml-sitemaps.com</title>
-     <description>brandonbr1.github.io Site Map - Generated by www.xml-sitemaps.com</description>
+     <link>https://brandonbr1.github.io/mods/fastfoodmod.html</link>
+     <title>fastfoodmod</title>
+     <description>fastfoodmod</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
+     <ror:sortOrder>3</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://brandonbr1.github.io/city-lucky-block-race.html</link>
-     <title>city lucky block race</title>
-     <description>city lucky block race</description>
+     <link>https://brandonbr1.github.io/mods/thesunmodevenbrighter.html</link>
+     <title>she son sun's mod even brighter</title>
+     <description>she son sun's mod even brighter</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
+     <ror:sortOrder>3</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://brandonbr1.github.io/popoularmmosvillagemap.html</link>
+     <link>https://brandonbr1.github.io/mods/magicalsnowmodreport.html</link>
+     <title>Magical Snow Mod report 1.17.1</title>
+     <description>Magical Snow Mod report 1.17.1</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/maps/city-lucky-block-race.html</link>
+     <title>City lucky block map lucky block race</title>
+     <description>City lucky block map lucky block race</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://brandonbr1.github.io/maps/popoularmmosvillagemap.html</link>
      <title>Popularmmos-Village-Map</title>
      <description>Popularmmos-Village-Map</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://brandonbr1.github.io/patscitysurival.html</link>
-     <title>pat's city surival</title>
-     <description>pat's city surival</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://brandonbr1.github.io/pats6epicprop.html</link>
-     <title>Document</title>
-     <description>Document</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://brandonbr1.github.io/too-mutch-exploring.html</link>
-     <title>too mutch exploring</title>
-     <description>too mutch exploring</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://brandonbr1.github.io/craftingdeadplusplus.html</link>
-     <title>Craftingdead++</title>
-     <description>Craftingdead++</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://brandonbr1.github.io/fastfoodmod.html</link>
-     <title>FastFoodMod</title>
-     <description>FastFoodMod</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
+     <ror:sortOrder>3</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://brandonbr1.github.io/orange-luck-addon.html</link>
-     <title>Orange Lucky Block addon</title>
-     <description>Orange Lucky Block addon</description>
+     <title>orange-lucky-block-addon</title>
+     <description>orange-lucky-block-addon</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
+     <ror:sortOrder>4</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 </channel>
