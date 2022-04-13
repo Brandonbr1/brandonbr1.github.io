@@ -16,6 +16,20 @@ function DsGet() {
   alert('jerios#2143')
 }
 
+function McFourmsGet() {
+  if (window.confirm('would you like to go to my McFourms(press ok) ')) 
+  {
+  window.location.href='https://www.minecraftforum.net/members/brandon7579898/threads';
+  };
+  }
+
+function PMCGet() {
+  if (window.confirm('would you like to go to my PMC profile(press ok) ')) 
+  {
+  window.location.href='https://www.planetminecraft.com/member/mohammedbrandon/';
+  };
+  }
+
 function RedditGet() {
   if (window.confirm('would you like to go to my reddit(press ok) ')) 
   {
