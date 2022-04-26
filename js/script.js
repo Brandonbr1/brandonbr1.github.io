@@ -60,8 +60,8 @@ window.location.href='https://bit.ly/Brandonbr1Git';
 
 function myFunction() {
     year = document.getElementById("theyear").innerHTML = "Years";
-    document.getElementById("demo").innerHTML =
-    Math.floor(Math.random() * 100) + 1;
+    let x = Math.floor((Math.random() * 100) + 1);
+    document.getElementById("demo").innerHTML = x;
 };
 
 
