@@ -36,7 +36,7 @@ html {
 }
 .brandonbr1underline {
     text-decoration: underline;
-    color: green;
+    color: red;
 }
 body {
     font-family: 'Ubuntu';
@@ -413,7 +413,7 @@ input {
 }
 
 .light-mode {
-    background-color: rgb(146, 146, 241);
+    background-color: rgb(232, 232, 240);
     color: black;
   }
   .darkbtn {
@@ -451,3 +451,4 @@ input {
       color: red;
       font-size: 40px;
   }
+  
