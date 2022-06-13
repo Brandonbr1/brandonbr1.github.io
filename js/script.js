@@ -62,6 +62,7 @@ function myFunction() {
     year = document.getElementById("theyear").innerHTML = "Years";
     let x = Math.floor((Math.random() * 100) + 1);
     document.getElementById("demo").innerHTML = x;
+    document.getElementById("theyear").innerHTML = x;
 };
 
 
@@ -103,6 +104,7 @@ function setCookie(cname,cvalue,exdays) {
 
 };
 // from https://css-tricks.com/add-a-service-worker-to-your-site/
+
 
 if (navigator && navigator.serviceWorker) {
   navigator.serviceWorker.register('sw.js');
