@@ -1,12 +1,4 @@
-/* ubuntu-italic - latin */
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: italic;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/ubuntu-v19-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -37,9 +29,11 @@ html {
 .brandonbr1underline {
     text-decoration: underline;
     color: red;
+    font-family: 'Montserrat', sans-serif !important;
 }
+
 body {
-    font-family: 'Ubuntu';
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     margin: auto;
     padding: auto;
@@ -53,6 +47,10 @@ body {
     padding: 0;
     scroll-behavior: smooth;
    /* background: linear-gradient(90deg, #010101 0, #2a2928 100%); */
+}
+.dark-mode {
+    background-color: #2a2928;
+    color: white;
 }
 nav {
     font-size: 1.875rem;
@@ -278,6 +276,7 @@ input {
 .dsgetbtn:hover{
     transition: 1s;
     background-color: rgb(206, 33, 206);
+    opacity: 0.2;
 }
 
 .gobackbtn {
@@ -286,6 +285,7 @@ input {
 .gobackbtn:hover{
     transition: 2s;
     background-color: #a11919;
+    opacity: 0.2;
 }
 
 .dropbtn {
@@ -376,8 +376,9 @@ input {
     width: 80%;
 }
 .twitbtn:hover{
-    transition: 1s;
+    transition: 2s;
     background-color: #2a5a81;
+    opacity: 0.2;
 }
 
 .redditbtn {
@@ -388,6 +389,7 @@ input {
 .redditbtn:hover{
     transition: 1s;
     background-color: #e06565;
+    opacity: 0.2;
 }
 
 .githubbtn {
@@ -399,6 +401,7 @@ input {
 .githubbtn:hover {
     transition: 1s;
     background-color: #aeb6b6;
+    opacity: 0.2;
 }
 
 .emailbtn {
@@ -409,7 +412,8 @@ input {
 
 .emailbtn:hover {
     transition: 1s;
-    background-color: rgb(243, 155, 155)
+    background-color: rgb(243, 155, 155);
+     opacity: 0.2;
 }
 
 .light-mode {
