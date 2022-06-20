@@ -48,10 +48,6 @@ body {
     scroll-behavior: smooth;
    /* background: linear-gradient(90deg, #010101 0, #2a2928 100%); */
 }
-.dark-mode {
-    background-color: #2a2928;
-    color: white;
-}
 nav {
     font-size: 1.875rem;
 }
@@ -234,10 +230,6 @@ a:hover {
 
     }
   }
-
-.blog1 {
-    background-color: #777;
-}
 
 h1 {
     text-shadow: 2px 2px 5px #f5b95e;
