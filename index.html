@@ -1,0 +1,189 @@
+<!DOCTYPE html> <html lang="en">
+<head>  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style/important/fonts.css">
+    <link rel="stylesheet" href="./style/important/essential.css">
+    <link rel="stylesheet" href="./style/important/common.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link href="https://brandonbr1.github.io" rel="canonical" />
+    <meta name="robots" content="all">
+    <meta name="theme-color" content="#fcf4e5">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nothing Epic, just my site" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="Nothing Epic, just my site" />
+    <meta name="twitter:creator" content="Vortex" />
+    <meta name="twitter:title" content="Nothing Epic, just my site" />
+    <meta name="twitter:url" content="https://brandonbr1.github.io">
+    <meta name="twitter:app:url:iphone" content="https://brandonbr1.github.io">
+    <meta name="twitter:description"
+        content="tNothing Epic, just my site." />
+    <meta name="twitter:image" content="https://brandonbr1.github.io/media/Brandonbr1.png">
+    <meta name="og:image" content="https://brandonbr1.github.io/media/Brandonbr1.png">
+    <meta name="og:url" content="https://brandonbr1.github.io/">
+    <meta charset="UTF-8">
+    <meta name="description" content="Nothing Epic, just my site" />
+    <meta name="keywords" content="Vortex" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="article:publisher" content="https://brandonbr1.github.io" />
+    <script type="application/ld+json">
+            "@context": "https://schema.org/",
+            "name": "Vortex",
+            "author": "Jerios",
+            "image": "",
+            "description": "Nothing Epic, just my site" </script>
+<!-- Page specific styling-->
+<style>
+    p {
+        display: block;
+        max-width: 38%;
+        margin-left: auto;
+        margin-right: auto;
+        word-break: keep-all;
+    }
+    div.hide {
+        display: none;
+    }
+
+    div.show {
+        display: block;
+    }
+    @media only screen and (max-width: 600px) {
+        p {
+            max-width: 79%;
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <section id="top-fold">
+    <h1 style="margin-top: 5%; margin-bottom: 5%; text-decoration: underline;" class="special-text">Vortex's lil website</h1>
+    <p class="special-text">Hi. I'm just some random guy doing random guy stuff. To be a bit more specific, I more or less, I try to thinker with old Minecraft mods, and modify them to fix bugs, or add a thing or two in it. Nothing special...</p>
+    <br>
+    <p class="special-text">Oh, and I'm also a huge fan of PopularMMOS. I hope he recovers man..... His story is devastating.</p>
+    <br>
+    <p class="special-text">I also occasionally decide to work on some modpacks. You can find that if you scroll down far enough. </p>
+    </section>
+
+    <section id="current-stuff">
+        <h2 class="special-text">Current Stuff I'm Working on.</h2>
+        <br>
+        <p class="special-text">Currently, I'm working on Eviler Minecraft, A modpack which aims to expand upon on of <a href="https://www.youtube.com/watch?v=OTPs2Iyy0fk">PopularMMOS' earliest modpacks</a>. It will add many brand new mods, all of which aim to make Minecraft harder.... in a 'Minecraft style' <br><br>
+            Like, you know those 'hard' modpacks such as "blood N' Bones" that make Minecraft hard in a way Minecraft would never ever do, or add mechanics that make Minecraft 'hard' in a 'realistic way'? Like for instance, "RL Craft", which adds "Lycanites Mobs", which has mechanics and models which don't even rometely fit Minecraft. <br> <br>
+            Yeah, that's not gonna be in there. When you play it, it will not be 'semi realistic'. The modpack is hard in a way without using 'realism' as an excuse for its mechanics. It will also have mods, which will show and tell that it is modded, but not in an extreme way. It tries to be low key. I hope that explanation was good.
+        </p>
+
+        <h2 class="special-text">Old Updates</h2>
+        <button id="btn" onclick="logToggle()">Open</button>
+        <div id="logs" class="hide">
+            <p>No anything old I can mention yet.</p>
+        </div>
+    </section>
+    
+
+        <h2 class="special-text">Here is where you can find me(Click to get the links)</h2>
+        <ul>
+            <li>
+                <p onclick="showSocialInfo('github')">Github</p>
+            </li>
+            <li>
+                <p onclick="showSocialInfo('discord')">Discord</p>
+            </li>
+            <li>
+                 <p onclick="showSocialInfo('technic')">Technic</p>
+            </li>
+            <li>
+                <p  onclick="showSocialInfo('email')">Email</p>
+            </li>
+            <li>
+                <p onclick="showSocialInfo('youtube')">youtube</p>
+            </li>
+        </ul>
+
+    
+    <footer>
+        Copyright Vortex 2025. <br>
+        I don't collect any data, because this is a basic personal site, why would I need to do that??? <br>
+    </footer>
+    
+</body>
+<script defer async="false">
+    var hasAnsweredCorrectly = false;
+
+function showSocialInfo(media) { 
+
+    // if answered correctly once, don't ask again
+    if (hasAnsweredCorrectly == false) {
+        var question = prompt("Which Youtuber am I a huge fan of?");
+
+        // causes error if we try toLowerCase(); a null. toLowerCase to make it not case sen.
+        if (question != null) {
+            question.toLowerCase();
+        }
+
+        // if we have answered correctly, update the boolean.
+        if (question == "popularmmos") {
+            hasAnsweredCorrectly = true;
+        }
+    }
+
+    if (hasAnsweredCorrectly == true) {
+    switch(media) {
+        case 'discord':
+            protectSocial("d2hmZ193cmV2YmY=");   
+            break;
+        case 'github':
+            protectSocial("dWdnY2Y6Ly90dmd1aG8ucGJ6L09lbmFxYmFvZTEv");
+            break;
+        case 'email':
+            protectSocial("emJ1bnp6cnFvZW5hcWJhMjA0QHR6bnZ5LnBieg==");
+            break;
+        case 'technic':
+            console.log("hello world")
+            break;
+        case 'youtube':
+            protectSocial('dWdnY2Y6Ly9qamoubGJoZ2hvci5wYnovcHVuYWFyeS9IUHBYbnUxNEZQRHJ0X3dPMzlxX2J4MHQ=');
+            break;
+    } 
+    
+} else {
+    alert("Typed incorrectly!")
+}
+
+}
+
+function protectSocial(encdoedStr) 
+{
+    var decStr = atob(encdoedStr);
+    var finalString = rot13(decStr);
+    alert(finalString);
+}
+
+/** 
+const letterArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i','j','k','l','m', 'n', 'o', 'p', 'q', 'r', 's', 't','u','v', 'w','x','y','z']
+
+
+function r13(me) {
+
+}
+**/
+
+
+
+// https://hellodevworld.com/365-days-of-coding/rot13-cipher-javascript-solution
+function rot13(message) {
+    return message.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)));
+} 
+</script>
+
+</html>

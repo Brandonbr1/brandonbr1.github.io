@@ -1,0 +1,20 @@
+button {
+    border: none;
+    padding: 0.8% 4.5%;
+    margin: none;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+} 
+@media only screen and (max-width: 600px) {
+    button {
+        padding: 3% 15%;
+    }
+}
+.special-text {
+    text-shadow: 4px 4px 4px #746f6f;
+} 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
