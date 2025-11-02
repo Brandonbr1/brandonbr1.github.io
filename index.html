@@ -83,11 +83,7 @@
             Yeah, that's not gonna be in there. When you play it, it will not be 'semi realistic'. The modpack is hard in a way without using 'realism' as an excuse for its mechanics. It will also have mods, which will show and tell that it is modded, but not in an extreme way. It tries to be low key. I hope that explanation was good.
         </p>
 
-        <h2 class="special-text">Old Updates</h2>
-        <button id="btn" onclick="logToggle()">Open</button>
-        <div id="logs" class="hide">
-            <p>No anything old I can mention yet.</p>
-        </div>
+        
     </section>
     
 
@@ -118,7 +114,8 @@
     
 </body>
 <script defer async="false">
-    var hasAnsweredCorrectly = false;
+
+var hasAnsweredCorrectly = false;
 
 function showSocialInfo(media) { 
 
@@ -168,17 +165,6 @@ function protectSocial(encdoedStr)
     var finalString = rot13(decStr);
     alert(finalString);
 }
-
-/** 
-const letterArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i','j','k','l','m', 'n', 'o', 'p', 'q', 'r', 's', 't','u','v', 'w','x','y','z']
-
-
-function r13(me) {
-
-}
-**/
-
-
 
 // https://hellodevworld.com/365-days-of-coding/rot13-cipher-javascript-solution
 function rot13(message) {
