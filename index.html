@@ -83,7 +83,7 @@
             Yeah, that's not gonna be in there. When you play it, it will not be 'semi realistic'. The modpack is hard in a way without using 'realism' as an excuse for its mechanics. It will also have mods, which will show and tell that it is modded, but not in an extreme way. It tries to be low key. I hope that explanation was good.
         </p>
 
-        
+
     </section>
     
 
@@ -116,6 +116,7 @@
 <script defer async="false">
 
 var hasAnsweredCorrectly = false;
+const expectedString = "cG9wdWxhcm1tb3M=";
 
 function showSocialInfo(media) { 
 
@@ -126,10 +127,12 @@ function showSocialInfo(media) {
         // causes error if we try toLowerCase(); a null. toLowerCase to make it not case sen.
         if (question != null) {
             question.toLowerCase();
+            question = btoa(question);
         }
+        
 
         // if we have answered correctly, update the boolean.
-        if (question == "popularmmos") {
+        if (question == expectedString) {
             hasAnsweredCorrectly = true;
         }
     }
@@ -158,6 +161,9 @@ function showSocialInfo(media) {
 }
 
 }
+
+// cbchynezzbf
+
 
 function protectSocial(encdoedStr) 
 {
