@@ -1,20 +1,72 @@
+body {
+    cursor: crosshair;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    background-color: #2a2928;
+    padding: 0;
+    margin: 0;
+    border: none;
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: xx-large;
+}
+footer {
+    background-color: rgb(14, 13, 13);
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
 button {
     border: none;
     padding: 0.8% 4.5%;
     margin: none;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
-} 
+}
+.special-text {
+    text-shadow: 4px 4px 4px #746f6f;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin-top: 2.8%;
+    margin-bottom: 2.8%;
+}
+::selection {
+    background-color: rgb(255, 0, 0);
+}
+
 @media only screen and (max-width: 600px) {
     button {
         padding: 3% 15%;
     }
 }
-.special-text {
-    text-shadow: 4px 4px 4px #746f6f;
-} 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-} 
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+    text-shadow: 4px 4px 4px rgb(2, 58, 2);
+}
+a:visited {
+  color: rgb(119, 0, 255);
+  background-color: transparent;
+  text-decoration: none;
+  text-shadow: 4px 4px 4px rgb(47, 3, 97);
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+    text-shadow: 12px 12px 4px rgb(133, 5, 5);
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
