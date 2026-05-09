@@ -226,7 +226,12 @@
             if (question == expectedString) 
             {
                 hasAnsweredCorrectly = true;
-                switch (media) {
+            }
+
+        }
+
+        if (hasAnsweredCorrectly) {
+            switch (media) {
                 case 'Discord':
                     protectSocial("d2hmZ193cmV2YmY=");
                     break;
@@ -242,11 +247,10 @@
                 case 'Youtube':
                     protectSocial('dWdnY2Y6Ly9qamoubGJoZ2hvci5wYnovcHVuYWFyeS9IUHBYbnUxNEZQRHJ0X3dPMzlxX2J4MHQ=');
                     break;
-                }
-            } else {
-            alert("Typed incorrectly!")
             }
 
+        } else {
+            alert("Typed incorrectly!")
         }
 
     }
