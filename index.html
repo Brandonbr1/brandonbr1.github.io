@@ -233,37 +233,48 @@
         if (hasAnsweredCorrectly) {
             switch (media) {
                 case 'Discord':
-                    protectSocial("d2hmZ193cmV2YmY=");
+                    protectSocial("d2hmZ193cmV2YmY=", false);
                     break;
                 case 'Github':
-                    protectSocial("dWdnY2Y6Ly90dmd1aG8ucGJ6L09lbmFxYmFvZTEv");
+                    protectSocial("dWdnY2Y6Ly90dmd1aG8ucGJ6L09lbmFxYmFvZTEv", true);
                     break;
                 case 'Email':
-                    protectSocial("emJ1bnp6cnFvZW5hcWJhMjA0QHR6bnZ5LnBieg==");
+                    protectSocial("emJ1bnp6cnFvZW5hcWJhMjA0QHR6bnZ5LnBieg==", false);
                     break;
                 case 'Technic':
-                    protectSocial("dWdnY2Y6Ly9qamouZ3JwdWF2cGNucHguYXJnL2NlYnN2eXIvODEwODY2Ni96YnFjbnB4Zg==")
+                    protectSocial("dWdnY2Y6Ly9qamouZ3JwdWF2cGNucHguYXJnL2NlYnN2eXIvODEwODY2Ni96YnFjbnB4Zg==", true)
                     break;
                 case 'Youtube':
-                    protectSocial('dWdnY2Y6Ly9qamoubGJoZ2hvci5wYnovcHVuYWFyeS9IUHBYbnUxNEZQRHJ0X3dPMzlxX2J4MHQ=');
+                    protectSocial('dWdnY2Y6Ly9qamoubGJoZ2hvci5wYnovcHVuYWFyeS9IUHBYbnUxNEZQRHJ0X3dPMzlxX2J4MHQ=', true);
                     break;
             }
 
         } else {
-            alert("Typed incorrectly!")
+            alert("Incorrect answer or Typed Incorrect.")
         }
 
     }
 
 
-    function protectSocial(encdoedStr) {
-        var decStr = atob(encdoedStr);
-        var finalString = rot13(decStr);
-        alert(finalString);
+    function protectSocial(encdoedStr, redirect) 
+    {
+        const decStr = atob(encdoedStr);
+        const finalString = rot13(decStr);
+
+        if (redirect) 
+        {
+            if (confirm("Go to Link?") == true) 
+            {
+                window.location.href = finalString;
+            } 
+        } else {
+            alert(finalString);
+        }
     }
 
     // https://hellodevworld.com/365-days-of-coding/rot13-cipher-javascript-solution
-    function rot13(message) {
+    function rot13(message) 
+    {
         return message.replace(/[a-z]/gi, letter => String.fromCharCode(letter.charCodeAt(0) + (letter.toLowerCase() <= 'm' ? 13 : -13)));
     } 
 </script>
