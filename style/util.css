@@ -1,19 +1,4 @@
-div.card-con {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    word-break: keep-all;
-    border-style: groove;
-    background: #0f0f0f;
-    background: linear-gradient(212deg, rgba(15, 15, 15, 1) 0%, rgba(48, 48, 48, 1) 100%);
-}
-.larged{
-    font-size: 135%;
-}
-.space{
-    padding-top: 5%;
-}
-details:open {
-    background: #0f0f0f;
-    background: linear-gradient(212deg, rgb(18, 18, 18) 0%, rgb(6, 6, 6) 100%);
-}
+div.card-con{max-width:60%;margin-left:auto;margin-right:auto;word-break:keep-all;border-style:groove;background:#0f0f0f;background:linear-gradient(212deg,rgba(15,15,15,1)0%, rgba(48,48,48,1)100%);}
+.larged{font-size:135%;}
+.space{padding-top:5%;}
+details:open{background:#0f0f0f;background:linear-gradient(212deg,rgb(18,18,18)0%,rgb(6,6,6)100%);}

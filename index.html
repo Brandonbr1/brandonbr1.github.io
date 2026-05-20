@@ -175,19 +175,19 @@
     <h2 class="special-text">Here is where you can find me(Click to get the links)</h2>
     <ul>
         <li>
-            <p onclick="showSocialInfo('Github')">Github</p>
+            <p class="clickable" onclick="showSocialInfo('Github')">Github</p>
         </li>
         <li>
-            <p onclick="showSocialInfo('Discord')">Discord</p>
+            <p class="clickable" onclick="showSocialInfo('Discord')">Discord</p>
         </li>
         <li>
-            <p onclick="showSocialInfo('Technic')">Technic</p>
+            <p class="clickable" onclick="showSocialInfo('Technic')">Technic</p>
         </li>
         <li>
-            <p onclick="showSocialInfo('Email')">Email</p>
+            <p class="clickable" onclick="showSocialInfo('Email')">Email</p>
         </li>
         <li>
-            <p onclick="showSocialInfo('Youtube')">YouTube</p>
+            <p class="clickable" onclick="showSocialInfo('Youtube')">YouTube</p>
         </li>
     </ul>
     </section>
@@ -203,16 +203,15 @@
 </body>
 <script defer async="false">
 
-    var hasAnsweredCorrectly = false;
+    let hasAnsweredCorrectly = false;
     const expectedString = "cG9wdWxhcm1tb3M=";
 
     function showSocialInfo(media) {
         // if answered correctly once, don't ask again
         if (hasAnsweredCorrectly == false) {
-            var question = prompt("Which Youtuber am I a huge fan of?")
+            let question = prompt("Which Youtuber am I a huge fan of?")
 
-            // causes error if we try toLowerCase(); a null. toLowerCase to make it not case sen.
-            if (question != null) {
+            if (question != null || !question.length === 0) {
                 question = question.toLowerCase();
                 question = btoa(question);
             }
